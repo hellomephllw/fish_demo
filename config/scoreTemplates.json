@@ -1,0 +1,10 @@
+[
+  {
+    "type": "score",
+    "name": "score",
+    "width": "36",
+    "height": "49",
+    "path": "/fishDemo/images/coinText.png",
+    "speed": "2"
+  }
+]

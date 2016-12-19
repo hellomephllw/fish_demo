@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fish</title>
+    <!-- css reset -->
+    <link rel="stylesheet" href="/fishDemo/css/normalize.css">
+    <!-- 打鱼css文件 -->
+    <link rel="stylesheet" href="/fishDemo/css/fish.css">
+</head>
+<body>
+    <section class="viewport">
+        <!-- 鱼的图层 -->
+        <canvas id="fishCanvas" class="fishCanvas" width="1024" height="600"></canvas>
+        <!-- 子弹图层 -->
+        <canvas id="bulletCanvas" class="bulletCanvas" width="1024" height="600"></canvas>
+        <!-- 面板的图层 -->
+        <canvas id="panelCanvas" class="panelCanvas" width="1024" height="600"></canvas>
+        <!-- 积分和炮台图层 -->
+        <canvas id="cannonCanvas" class="cannonCanvas" width="1024" height="600"></canvas>
+    </section>
+    div>ul*3
+    <button id="stop">stop</button>
+    <button id="restart">restart</button>
+    <script src="/fishDemo/js/util.js"></script>
+    <script src="/fishDemo/js/easyAJAX.js"></script>
+    <script src="/fishDemo/js/model/Score.js"></script>
+    <script src="/fishDemo/js/model/Coin.js"></script>
+    <script src="/fishDemo/js/model/Net.js"></script>
+    <script src="/fishDemo/js/model/Bullet.js"></script>
+    <script src="/fishDemo/js/model/Fish.js"></script>
+    <script src="/fishDemo/js/model/Cannon.js"></script>
+    <script src="/fishDemo/js/fishGame.js"></script>
+    <script>
+//        var arr = [];
+//        //读取json数据
+//        edison.ajax({
+//            async: false,
+//            url: "/fishDemo/config/fishTemplates.json",
+//            success: function(data) {
+//                console.info(data);
+//                arr = data;
+//            }
+//        });
+//
+//        //获取图层
+//        var fishCanvasEle = document.getElementById("fishCanvas");
+//        //获取context
+//        var fishCtx = fishCanvasEle.getContext("2d");
+//
+//        var fishImgEle = new Image();
+//        //发送请求是异步的
+//        fishImgEle.src = "/fishDemo/images/fish1.png";
+//        //等待fishImgEle加载完毕触发此函数
+//        fishImgEle.onload = function() {
+//            var params = [{x: 0, y: 0}, {x: 0, y: 37}, {x: 0, y: 74}, {x: 0, y: 111}];//鱼摆动参数
+//            var imgPositionCount = 0;//图片位置计数器
+//            var timeCount = 0;//控制时间的计数器
+//            //画图
+//            requestAnimationFrame(function() {
+//                timeCount = timeCount == 600000 ? 0 : timeCount + 1;
+//                if (timeCount * 10 % 60 == 0) {
+//                    imgPositionCount = imgPositionCount == params.length - 1 ? 0 : imgPositionCount + 1;
+//                    /*
+//                     *  1.先把所有的内容画在缓存的画布上（逻辑处理开销，画画开销）
+//                     *  2.等缓存的画布完成以后，再清空正在使用的画布
+//                     *  3.把缓存画布上的内容一次性放入当前正在使用的画布
+//                     */
+//                    //创建缓存画布
+//                    var cacheCanvasEle = document.createElement("canvas");
+//                    cacheCanvasEle.width = 1024;
+//                    cacheCanvasEle.height = 600;
+//                    var cacheCtx = cacheCanvasEle.getContext("2d");
+//                    cacheCtx.drawImage(fishImgEle, 0, params[imgPositionCount].y, 55, 36, 0, 0, 55, 36);//绘制鱼的图片
+//                    fishCtx.clearRect(0, 0, 1024, 600);//清除图层中的所有内容
+//                    fishCtx.drawImage(cacheCanvasEle, 0, 0, 1024, 600);
+//                }
+//                requestAnimationFrame(arguments.callee);
+//            });
+//            setInterval(function() {
+//                ++imgPositionCount;//累加
+//                if (imgPositionCount === params.length) imgPositionCount = 0;//归零
+//                /*
+//                 *  1.先把所有的内容画在缓存的画布上（逻辑处理开销，画画开销）
+//                 *  2.等缓存的画布完成以后，再清空正在使用的画布
+//                 *  3.把缓存画布上的内容一次性放入当前正在使用的画布
+//                */
+//                //创建缓存画布
+//                var cacheCanvasEle = document.createElement("canvas");
+//                cacheCanvasEle.width = 1024;
+//                cacheCanvasEle.height = 600;
+//                var cacheCtx = cacheCanvasEle.getContext("2d");
+//                cacheCtx.drawImage(fishImgEle, 0, params[imgPositionCount].y, 55, 36, 0, 0, 55, 36);//绘制鱼的图片
+//                fishCtx.clearRect(0, 0, 1024, 600);//清除图层中的所有内容
+//                fishCtx.drawImage(cacheCanvasEle, 0, 0, 1024, 600);
+//            }, 100);
+
+//        }
+    </script>
+</body>
+</html>

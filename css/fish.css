@@ -1,0 +1,22 @@
+.viewport {
+    width: 1024px;
+    height: 600px;
+    position: relative;
+    margin: 10px auto;
+    background-image: url("/fishDemo/images/game_bg_2_hd.jpg");
+}
+.fishCanvas,.bulletCanvas,.panelCanvas,.cannonCanvas {
+    position: absolute;
+}
+.fishCanvas {/*将鱼的图层放在最下面*/
+    z-index: 1;
+}
+.bulletCanvas {/*将子弹的图层放在倒数第二层*/
+    z-index: 2;
+}
+.panelCanvas {/*将面板图层放在倒数第三层*/
+    z-index: 3;
+}
+.cannonCanvas {/*将大炮图层放在最上面*/
+    z-index: 4;
+}

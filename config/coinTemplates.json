@@ -1,0 +1,22 @@
+[
+  {
+    "type": "coin",
+    "name": "coin1",
+    "width": "60",
+    "height": "60",
+    "path": "/fishDemo/images/coinAni1.png",
+    "swingSpanLength": "60",
+    "swingSpanAmount": "10",
+    "speed": "10"
+  },
+  {
+    "type": "coin",
+    "name": "coin2",
+    "width": "60",
+    "height": "60",
+    "path": "/fishDemo/images/coinAni2.png",
+    "swingSpanLength": "60",
+    "swingSpanAmount": "10",
+    "speed": "10"
+  }
+]

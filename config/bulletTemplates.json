@@ -1,0 +1,10 @@
+[
+  {
+    "type": "bullet",
+    "name": "bullet1",
+    "width": "24",
+    "height": "26",
+    "path": "/fishDemo/images/bullet1.png",
+    "score": "1"
+  }
+]
